@@ -1,0 +1,120 @@
+/* :root {
+  --gradient: linear-gradient(180deg, #555 5%, #222 25%, #333 99%);
+  --background-image: url("https://taterinx.neocities.org/images/backgrounds/f0613e0d.jpg");
+  --text-color: #d5d5d5;
+  --text-shadow: -1px -1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000, 1px 1px 1px #000;
+  --text-size: 12pt;
+  --link-color: #d5d5d5;
+  --border: 1px solid #222;
+  --border-radius: 5px;
+  --outline: 1px solid #555;
+  --box-shadow: -8px 8px 8px #111, 2px -2px 8px #333;
+}
+
+* {cursor: url(https://cur.cursors-4u.net/symbols/sym-1/sym57.cur), auto;}
+
+::-webkit-scrollbar {width: 15px; height: 15px;}
+::-webkit-scrollbar-track {background-image: url(https://i.imgur.com/1wwyNgR.png);}
+::-webkit-scrollbar-thumb {background-image: url(https://i.imgur.com/3twDfJb.png); border-top: 1px solid #111; border-bottom: 1px solid #000;}
+::-webkit-scrollbar-button:vertical:decrement {background-image: url(https://i.imgur.com/pSpgQbq.png); width: 15px; height: 15px;}
+::-webkit-scrollbar-button:vertical:increment {background-image: url(https://i.imgur.com/IzbYg9x.png); width: 15px; height: 15px;}
+
+body {background: var(--background-image); background-attachment: fixed; background-size: 1px; color: var(--text-color); text-shadow: var(--text-shadow); overflow-y: scroll; position: relative; margin: 2px;}
+
+a {color: var(--link-color);}
+
+h1 {font-size: var(--text-size);}
+
+blockquote {border-left: 3px solid #d5d5d5; padding-left: 10px;}
+
+header {position: fixed; padding: 80px 50px 144px; width: 280px; background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)); height: 100%;}
+header > a {text-decoration: none;}
+header > a:before {content: "╭──────────────────────╮"; color: #555;}
+header > a > h1 {background: var(--gradient); border: var(--border); outline: var(--outline); border-radius: var(--border-radius); box-shadow: var(--box-shadow); margin-top: 0;}
+header > a > h1:before {content: "ヾ๑ˊᵕˋ๑ |ミ☆ ";} 
+header > a > h1:after {content: " *ੈ✩⁀➷";}
+header > nav {background: var(--gradient); border: var(--border); outline: var(--outline); border-radius: var(--border-radius); max-height: 375px; overflow-y: scroll; padding: 2px; box-shadow: var(--box-shadow);}
+header > nav:after {content: "╰──────────────────────╯"; color: #555; position: absolute; margin-left: -5px;}
+header > nav > p {margin-block: 0;}
+header > nav > p:nth-child(1) {margin: 0; position: relative;}
+header > nav > p:nth-child(1) > img:nth-child(1) {width: 100%; border-radius: var(--border-radius);}
+header > nav > p:nth-child(1) > img:nth-child(2) {position: absolute; bottom: 0; left: 0; margin-bottom: 3px;}
+header > nav > p:nth-child(2) {background: linear-gradient(90deg, #666 1%, #555 10%, #666 99%); border-left: var(--border); border-right: var(--border); border-top: var(--border); margin-block: 0; padding-inline: 5px; border-top-left-radius: var(--border-radius); border-top-right-radius: var(--border-radius);}
+header > nav > p:nth-child(3), header > nav > p:nth-child(4) {background: linear-gradient(90deg, #666 1%, #555 10%, #666 99%); border-left: var(--border); border-right: var(--border); margin-block: 0; padding-inline: 5px;}
+header > nav > p:nth-child(4) {text-align: center;}
+body > header > nav > p:nth-child(6) {padding-inline: 5px;}
+
+header > nav > p:nth-child(5) {
+  background: linear-gradient(90deg, #666 1%, #555 10%, #666 99%); 
+  border-left: var(--border); 
+  border-right: var(--border); 
+  border-bottom: var(--border); 
+  margin-block: 0; 
+  padding-inline: 5px; 
+  border-bottom-left-radius: var(--border-radius); 
+  border-bottom-right-radius: var(--border-radius); 
+  padding-bottom: 5px;
+}
+
+
+main {
+  padding-top: 72px;
+  padding-bottom: 72px;
+  margin-left: 385px;
+  max-width: 700px;
+}
+
+footer {
+  position: fixed; 
+  transform: rotate(270deg); 
+  color: #666;
+  bottom: 250px;
+  left: -40px;
+}
+
+footer > span > a {color: #666;}
+
+.upvote-button {display: none !important;}
+@media (max-width: 700px) {
+  
+  body {
+    padding: 10px;
+  }
+  
+  header {
+    position: static !important;
+    padding: 0;
+    width: 100%;
+  }
+  
+  header > nav {
+    overflow: hidden;
+  }
+  
+  header > nav > p:nth-child(4) {
+    border-radius: var(--border-radius);
+    line-height: 1.5em;
+  }
+  
+  main {
+    position: static !important;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  footer {
+    position: static;
+    transform: none;
+    background: var(--gradient); 
+    border: var(--border); 
+    outline: var(--outline); 
+    border-radius: var(--border-radius); 
+    box-shadow: var(--box-shadow);
+    padding: 5px 8px !important;
+    text-align: center;
+  }
+  
+  header > nav > p:nth-child(1) > img:nth-child(1), header > nav > p:nth-child(1) > img:nth-child(2), header > a:before, header > nav:after, header > nav > p:nth-child(2), header > nav > p:nth-child(3), header > nav > p:nth-child(4) > br, header > nav > p:nth-child(5), header > nav > p:nth-child(6) {display: none;}
+  
+}*/
