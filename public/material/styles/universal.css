@@ -8,3 +8,5 @@
     --colour-two: #C53030;
     --colour-tre: #444C54;
 }
+
+.fade {animation: fade ease 1s;}
