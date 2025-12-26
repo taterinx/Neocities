@@ -5,19 +5,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About | Taterinx</title>
     <link rel="icon" type="image/x-icon" href="/favicon.ico?">
-    <link href="/styles/universal.css" rel="stylesheet" type="text/css" media="all">
     <style>
-      [id] {display: none;}
-      [id]:target {display: block;}
+          :root {
+      --background: #fdfdfc;
+      --blue: #444C54;
+      --green: #5C7C4C;
+      --red: #C53030;
+      --text: #242424;
+      --font: Calibri, Helvetica, Arial, sans-serif;
+    }
+      /*http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none (public domain)*/
+      /*html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, blockquote, p, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline;} /* HTML5 display-role reset for older browsers */ /*article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;} blockquote, q {quotes: none;} body {line-height: 1;} blockquote:before, blockquote:after, q:before, q:after {content: ''; content: none;} table { border-collapse: collapse; border-spacing: 0;}*/
+      
+      /*the meat of it*/
+      html {font-size: 14px;}
+      
+      body {
+        background: var(--background);
+        color: var(--text);
+        font-family: var(--font);
+        font-size: 1rem;
+        line-height: 1.4;
+        padding: 1.5rem;
+      }
+
+      
+    /*text*/
+    p {font-size: 1rem; line-height: 1.4; margin: 0 0 0.75rem; text-align: justify;}
+
+    h2, h3 {font-weight: 600; line-height: 1.2;}
+
+    h1 {font-size: 3rem;}
+
+    h2 {font-size: 1.5rem; margin: 1.4rem 0 0.6rem;}
+    h3 {font-size: 1.25rem; margin: 1.2rem 0 0.5rem;}
+
     </style>
-    <script src="/scripts/sparkle.js"></script>
   </head>
   <body>
-    <nav>
-      <ul>
-        <li><a href="#manifesto">Manifesto</a></li>
-      </ul>
-    </nav>
+    <header>
+      <h1>About the Webmaster</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#manifesto">Manifesto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <aside>
+      <h2>Funky Stuff</h2>
+      <h3>Quick Things</h3>
+      <table>
+        <tr><th>Name</th><td>Biggus</td></tr>
+        <tr><th>Pronouns</th><td>They/Them, She/Her</td></tr>
+      </table>
+      <h3>Interests</h3>
+      <p>Everything below is ordered alphabetically, not by ranking!!! If you want to know if I like something and it's not in the list, just message me!</p>
+      <fieldset>
+        <legend>Hobbies</legend>Art, Commonplacing, Game Development, Graphic Design, Indie Web, K-Pop, Nostalgia-Bait, Photography, Scrapbooking, Stationery, Writing
+      </fieldset>
+      <fieldset>
+        <legend>Music</legend>ADÉLA, Aespa, Basement Jaxx, Childish Gambino, Daft Punk, De La Soul, FKA Twigs, Gorillaz, JADE, Jane Remover, JPEGMAFIA, Le Sserafim, PinkPantheress, Prodigy, Snow Strippers, Talking Heads, Tribe Called Quest, Twice, Vince Staples, Vocaloids, Yeule, Yves
+      </fieldset>
+      <fieldset>
+        <legend>Movies</legend>Barbie (pre-2011), End of Evangelion, Fight Club, Hunger Games, Kill Bill, Knives Out, Kung Fu Hustle, Monster High, Naked Gun (1988), Oppenheimer, Terminator, White Chicks [Letterboxd]
+      </fieldset>
+      <fieldset>
+        <legend>TV Shows</legend>Attack on Titan, Black Butler, Bluey, Breaking Bad/Better Call Saul, Crash Landing On You, Free!, Jojo's Bizarre Adventures, K-On, Neon Genesis Evangelion, Ouran Highschool Host Club, Smiling Friends, Yu-Gi-Oh!
+      </fieldset>
+      <fieldset>
+        <legend>Videogames</legend>Baldurs Gate 3, Borderlands 2, Deep Rock Galactic, Deltarune, Elden Ring, Expedition 33, Fortnite, Halo, Hollow Knight, Omori, Portal 2, Rayman Legends/Origins, Skyrim, Slime Rancher, Stardew Valley, Water Womb World, Yakuza 0-6
+      </fieldset>
+      <fieldset>
+        <legend>Books</legend>I'm not erudite enough for books but Fight Club was tuff and I'm enjoying One Piece.
+      </fieldset>
+      <fieldset>
+        <legend>Creatives</legend>Aidan Zamiri, Damon Dominique, Izzzyzzz, Jacob Geller, Jordan Theresa, Juxtopposed, LAUZZA, Li Speaks, LuvstarKei, Mara, Matt Bernstein, NeverKnowsBest, Nisapisa, Nohluhn, Northernlion, Pancake, Peter Draws, RTGame, VaatiVidya
+      </fieldset>
+    </aside>
+    <main>
+      <section id="home">
+        <h2>Home</h2>
+        <p>Test</p>
+      </section>
+      <section id="manifesto">
+        <h2>Manifesto</h2>
+      </section>
+    </main>
+
+<!--  
+      <main>
+        <section>
+            <p>I grew up at the peak of flash games and online virtual worlds. Club Penguin, GirlsGoGames, and Happy Wheels to name a few formative childhood experiences. I was a bit of a recluse as a result, but I'd say it has allowed me to develop greater empathy when communicating online - having seen and been part of the good and the bad parts of it. Seeing the decline of these games has also fueled my interest for web revival in the current day!</p>
+            <p>Fast forward a bit, I had a Carrd to act as the super swanky version of a linktree for my social media. It was alright, but I felt like I could go beyond that one day. Then there was the underlying on-off relationship I had with learning Tumblr theme building, an exploration of Everskies profile customisation, and then Spacehey. It reached a point where I needed to fully sate an appetite. On the 4th March, 2023, Biggus Boggus was born. Not only that, but a newfound (but also longtime coming) interest in web 1.0, and the online culture I was too young for by the slightest margin. That was devastating to me, to have missed out on the web when it embraced everything I love about art and subjectivity.</p>
+            <p>A proper manifesto regarding my take on the current state of the internet is coming soon, as I believe a lot can be said about how old web philosophies can coexist with current developments. My Instagram account's intact.</p>
+        </section>
     <article id="manifesto">
       <h2>The key points</h2>
       <ol>
@@ -34,7 +116,6 @@
       <p>I just want to be known, but it goes against my skewed sense of pride to yell out loud, "I exist." I suppose that's why personal websites are so attractive. With these, you can have some presence to others that doesn't encroach on anyone's time unless they give way for it to. More often than not, it is so gratifying to stumble across something so personal and indicative of its creator. I assume if you're here, you understand exactly what I mean. It is that mutual exchange of seeing and being seen that first made sitebuilding so inviting.</p>
       <p>Because this online presence doesn't exist within the context of online hyperconsumption, I don't feel like I have to 'justify' it to anyone either nor underpin the whole endeavour with ambitions of my own omnipresence.</p>
       <p>Having a space where nothing is truly "complete" is also a huge comfort for me. I can leave for months and return with the same level of passion and possibly even more understanding of how I want to build my site and what I want to put into it. It is a forever friend, you'll always find your way back to them.</p>
-      <!-- uh -->
       <h3>Web revival as a movement and the fulfilment of participation</h3>
       <h2>Speculations for the future of tech</h2>
       <h3>The perfect digital world</h3>
@@ -77,71 +158,6 @@ What is the World Wide Web?
     <div class="column">
       <aside>
         <ul>
-          <li>Name: Victoria</li>
-          <li>Pronouns: They/She</li>
-          <li>Likes:</li>
-          <li>Dream:</li>
-          <li>Animal: cats, penguins, and godzilla</li>
-          <li>Colour: red</li>
-        </ul>
-        <nav>
-          <ul>
-            <li>Introduction</li>
-            <li>Interests</li>
-            <li></li>
-          </ul>
-        </nav>
-      </aside>
-      <main>
-        <section>
-            <p>I grew up at the peak of flash games and online virtual worlds. Club Penguin, GirlsGoGames, and Happy Wheels to name a few formative childhood experiences. I was a bit of a recluse as a result, but I'd say it has allowed me to develop greater empathy when communicating online - having seen and been part of the good and the bad parts of it. Seeing the decline of these games has also fueled my interest for web revival in the current day!</p>
-            <p>Fast forward a bit, I had a Carrd to act as the super swanky version of a linktree for my social media. It was alright, but I felt like I could go beyond that one day. Then there was the underlying on-off relationship I had with learning Tumblr theme building, an exploration of Everskies profile customisation, and then Spacehey. It reached a point where I needed to fully sate an appetite. On the 4th March, 2023, Biggus Boggus was born. Not only that, but a newfound (but also longtime coming) interest in web 1.0, and the online culture I was too young for by the slightest margin. That was devastating to me, to have missed out on the web when it embraced everything I love about art and subjectivity.</p>
-            <p>A proper manifesto regarding my take on the current state of the internet is coming soon, as I believe a lot can be said about how old web philosophies can coexist with current developments. My Instagram account's intact.</p>
-        </section>
-        <section>
-          <fieldset>
-            <legend>TV Shows/Anime</legend>
-            <ul>
-              <li>Better Call Saul</li>
-              <li>Breaking Bad</li>
-              <li>The Last of Us</li>
-              <li>Bluey</li>
-              <li>Ouran Highschool Host Club</li>
-              <li>Attack on Titan</li>
-              <li>RuPaul's Drag Race</li>
-              <li>Clannad</li>
-              <li>K-On</li>
-              <li>The Boys</li>
-              <li>Made in Abyss</li>
-            </ul>
-          </fieldset>
-          <fieldset>
-            <legend>Movies</legend>
-            <ul>
-              <li>The Iron Claw</li>
-              <li>Isle of Dogs</li>
-              <li>Oppenheimer</li>
-              <li>Jojo Rabbit</li>
-              <li>The Suicide Squad</li>
-              <li>Everything Everywhere All at Once</li>
-              <li>2001: A Space Odyssey</li>
-              <li>Akira</li>
-            </ul>
-          </fieldset>
-          <fieldset>
-            <legend>Music</legend>
-            <ul>
-              <li>Jpegmafia</li>
-              <li>Childish Gambino</li>
-              <li>The Prodigy</li>
-              <li>Gorillaz</li>
-              <li>Little Simz</li>
-              <li>New Jeans</li>
-              <li>G-Idle</li>
-              <li>Le Sserafim</li>
-              <li>Twice</li>
-              <li>Nia Archives</li>
-            </ul>
           </fieldset>
         </section>
       </main>
